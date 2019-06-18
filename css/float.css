@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+html, body {font-family: 'Raleway', sans-serif;  background-color: #f1f1f1;}
+.wraps {width: 1586px; margin: auto; height: 100%;}
+.wrap-lt {width: 300px; height: 100%; float: left; background-color: #fff;}
+.wrap-rt {width: 1270px; float: right; padding: 1rem;}
+
+/* wrap-lt */
+.wrap-lt > .photo {width: 130px; height: 130px; overflow: hidden; border-radius: 0.5rem; margin: 1rem;}
+.wrap-lt > .photo > img {width: 100%;}
+.wrap-lt > .tit {margin:2rem 1rem 1rem 1rem; font-size: 1.25rem;}
+.wrap-lt > .stit {margin: 1.5rem 1rem; color: #999;}
+.wrap-lt > .links {}
+.wrap-lt > .links > li {padding: 0.75rem 1rem;}
+.wrap-lt > .links > li:hover {background-color: #ccc;}
+.wrap-lt > .links > li:last-child {}
+
+/* wrap-rt */
