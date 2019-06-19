@@ -1,9 +1,21 @@
+/*
+Layer란
+position: static|absolute|relative|fixed
+여기서 relative|absolute|fixed 만 left, right, bottom, top, z-index를 가질 수 있다.
+
+표현방식이란?
+display: none|inline|inline-block|block|flex
+img => display: inline-block(한줄(inline)에 들어가지만 width, height를 가질 수 있다.)
+div, ul, li, p => display: block
+i, span, b => display: inline(width/height가 없다.)
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
-html, body {font-family: 'Raleway', sans-serif;  background-color: #f1f1f1;}
-.wraps {width: 1586px; margin: auto; height: 100%;}
-.wrap-lt {width: 300px; height: 100%; float: left; background-color: #fff;}
-.wrap-rt {width: 1270px; float: right; padding: 1rem;}
+html, body {font-family: 'Raleway', sans-serif;  background-color: #f1f1f1; height: 2000px;}
+.wraps {width: 1586px; margin: auto; }
+.wrap-lt {width: 300px; height: 100%; float: left; background-color: #fff; z-index: 9; border: 1px solid red; position: absolute; display: none;}
+.wrap-rt {width: 1270px; float: right; padding: 1rem; border: 1px solid green;}
 
 /* wrap-lt */
 .wrap-lt > .photo {width: 130px; height: 130px; overflow: hidden; border-radius: 0.5rem; margin: 1rem;}
