@@ -1,0 +1,16 @@
+/*
+.wrap {width: 100%; height: 100%; border: 1px solid red; position: relative;}
+.wrap > h1 {border: 10px solid blue; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)}
+*/
+
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+.wrap {width: 100%; height: 100%; border: 1px solid red;
+	display: flex;
+	justify-content: space-evenly;	/*flex-start*/
+	align-items: center;	/*stretch*/
+	flex-direction: row;	/*row*/
+	flex-wrap: wrap; /*wrap*/
+	align-content: stretch;	/*stretch*/
+}
+.wrap > h1 {border: 10px solid blue; text-align: center;}
