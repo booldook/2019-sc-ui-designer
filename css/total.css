@@ -1,0 +1,43 @@
+/*
+Layer란
+position: static|absolute|relative|fixed
+여기서 relative|absolute|fixed 만 left, right, bottom, top, z-index를 가질 수 있다.
+
+표현방식이란?
+display: none|inline|inline-block|block|flex
+img => display: inline-block(한줄(inline)에 들어가지만 width, height를 가질 수 있다.)
+div, ul, li, p => display: block
+i, span, b => display: inline(width/height가 없다.)
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+html, body {font-family: 'Raleway', sans-serif;  background-color: #f1f1f1; height: 2000px;}
+.wraps {width: 1586px; margin: auto; height: 100%; border: 1px solid green;}
+.wrap-lt {width: 300px; height: 100%; float: left; background-color: #fff; z-index: 9; border: 1px solid red; position: fixed;}
+.wrap-rt {width: 1270px; float: right; padding: 1rem; border: 1px solid green;}
+
+/* wrap-lt */
+.wrap-lt > .photo {width: 130px; height: 130px; overflow: hidden; border-radius: 0.5rem; margin: 1rem;}
+.wrap-lt > .photo > img {width: 100%;}
+.wrap-lt > .tit {margin:2rem 1rem 1rem 1rem; font-size: 1.25rem;}
+.wrap-lt > .stit {margin: 1.5rem 1rem; color: #999;}
+.wrap-lt > .links {}
+.wrap-lt > .links > li {padding: 0.75rem 1rem;}
+.wrap-lt > .links > li:hover {background-color: #ccc;}
+.wrap-lt > .links > li:last-child {}
+
+/* wrap-rt */
+
+.navi-wrap {display: flex; margin-top: 2rem;}
+.navi-wrap > .filter {padding: 0.75rem 0; margin-right: 1rem;}
+.navi-wrap > .navis {display: flex;}
+.navi-wrap > .navis > li {padding: 0.75rem 1.25rem;}
+.navi-wrap > .navis > li:first-child {background-color: #181818; color: white;}
+.navi-wrap > .navis > li:first-child:hover {background-color: #ccc; color:#181818;}
+
+.navi-wrap > .navis > li:not(:first-child) {background-color: #ffffff; color: black;}
+.navi-wrap > .navis > li:not(:first-child):hover {background-color: #ccc; color:#181818;}
+
+.img-wrap {display: flex; justify-content: space-between; flex-wrap: wrap;}
+.img-wrap > li {flex: 0 1 32%; margin: 0.5rem 0;}
